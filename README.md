@@ -13,10 +13,10 @@ namespace Foo {
     class Bar {
         public static void Main() {
             ImGuiImplVulkan.InitInfo info = .() {
-				// Fill with Vulkan data
-			};
+                // Fill with Vulkan data
+            };
 
-			ImGuiImplVulkan.Init(&info, renderPass);
+            ImGuiImplVulkan.Init(&info, renderPass);
 
             ...
 
@@ -24,7 +24,7 @@ namespace Foo {
                 ...
                 ImGuiImplVulkan.NewFrame();
                 ...
-				ImGui.Render();
+                ImGui.Render();
                 ImGuiImplVulkan.RenderDrawData(ImGui.GetDrawData(), commandBuffer);
                 ...
             }
